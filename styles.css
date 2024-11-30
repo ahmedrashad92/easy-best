@@ -1,0 +1,119 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* شريط التنقل */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* عرض المنتجات */
+.products {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.products .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* سلة المشتريات */
+#cart {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+#cart .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#cart ul {
+    list-style-type: none;
+}
+
+#cart ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart button {
+    background-color: #007bff;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+#cart button:hover {
+    background-color: #0056b3;
+}
