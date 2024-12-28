@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andaluisa Complaints</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo_andalusia.png" style="height: 32ch; width: 32ch;"><br>
+        <a href="indx_ع.html">عربي</a>
+    </header>
+    
+    <section id="btn" class="btnStyle">
+        <button id="Thankesbtn">Thanks</button><br>
+        <button id="showComplaintFormBtn">Complaints</button><br>
+        <button id="SugFormBtn">Suggestions</button><br>
+        <button id="linkFormBtn">Link</button>
+    </section>
+
+    <section class="form-en" id="complaintForm" style="display: none;">
+        <h2>complaint</h2>
+        <form id="complaintForm">
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone"><br>
+
+            <label for="complaintDetails">Complaint Details:</label><br>
+            <textarea id="complaintDetails" rows="4" required></textarea><br>
+            <div class="fbtn">
+            <button type="submit">Submit</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="form-en" id="suggestionsForm" style="display: none;">
+        <h2>Suggestion</h2>
+        <form id="suggestionsForm">
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone"><br>
+
+            <label for="complaintDetails">Suggestions:</label><br>
+            <textarea id="complaintDetails" rows="4" required></textarea><br>
+            <div class="fbtn">
+            <button type="submit">Submit</button>
+            <button type="button" id="scancelBtn">Cancel</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="Thankesform" style="display: none;">
+        <h2>Thanke You 😊</h2>
+    </section>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

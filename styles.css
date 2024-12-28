@@ -1,119 +1,104 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* شريط التنقل */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* عرض المنتجات */
-.products {
-    padding: 20px 0;
-    background-color: #fff;
-}
-
-.products .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.product-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
+    background-color: #ffffff;
+    background-image: url(img/bg.png);
     text-align: center;
-    margin: 10px;
 }
 
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+header {
+    text-align: center;
+    margin-top: 0%;
 }
 
-button {
-    background-color: #28a745;
+section {
+    text-align: center;
+}
+
+.btnStyle button{
+    background-color: #b48950;
     color: white;
     border: none;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 2ch;
+    width: 40%;
+}
+
+.form-ar {
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: left;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+    margin-top: 1%;
+    margin-left: 22%;
+    direction: rtl;
+    text-align: right;
+}
+
+.form-en {
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: left;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+    margin-top: 1%;
+    margin-left: 22%;
+    font-family: Arial;
+}
+
+.btnStyle button:hover {
+    background-color: #b3803d;
+}
+
+
+h2 {
+    color: #000000;
+}
+
+form input, form textarea, form select {
+    width: 95%;
+    padding: 8px;
+    margin: 1px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+
 }
 
-button:hover {
-    background-color: #218838;
-}
-
-/* سلة المشتريات */
-#cart {
-    background-color: #fff;
-    padding: 20px 0;
-}
-
-#cart .container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#cart ul {
-    list-style-type: none;
-}
-
-#cart ul li {
+label{
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    
 }
 
-#cart button {
-    background-color: #007bff;
-    border-radius: 5px;
-    padding: 15px;
+form button {
+    background-color: #b48950;
     color: white;
-    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2ch;
+    width: 12ch;
+
 }
 
-#cart button:hover {
-    background-color: #0056b3;
+
+form button:hover {
+    background-color: #b3803d;
 }
+
+/*footer {
+    background-image: url(img/bg.png);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+}*/

@@ -1,34 +1,89 @@
-// مصفوفة لتخزين العناصر المضافة إلى السلة
-let cart = [];
+//complaintForm
+document.getElementById('showComplaintFormBtn').addEventListener('click', function() {
+    const complaintForm = document.getElementById('complaintForm');
+    complaintForm.style.display = 'block'; 
 
-// وظيفة لإضافة منتج إلى السلة
-function addToCart() {
-    // إضافة منتج إلى السلة (يمكنك تخصيص هذا الجزء حسب المنتج)
-    let productName = event.target.previousElementSibling.previousElementSibling.innerText;
-    let productPrice = event.target.previousElementSibling.innerText;
+    const Thankesbtn = document.getElementById('Thankesbtn');
+    Thankesbtn.style.display = 'none';
 
-    let item = { name: productName, price: productPrice };
-    cart.push(item);
+    const showComplaintFormBtn = document.getElementById('showComplaintFormBtn');
+    showComplaintFormBtn.style.display = 'none';
 
-    updateCart();
-}
+    const SugFormBtn = document.getElementById('SugFormBtn');
+    SugFormBtn.style.display = 'none';
 
-// تحديث عرض السلة
-function updateCart() {
-    let cartItems = document.getElementById('cart-items');
-    cartItems.innerHTML = ""; // مسح المحتويات السابقة للسلة
+    const linkFormBtn = document.getElementById('linkFormBtn');
+    linkFormBtn.style.display = 'none';
+});
 
-    // إضافة العناصر الموجودة في السلة إلى واجهة المستخدم
-    cart.forEach(item => {
-        let listItem = document.createElement('li');
-        listItem.innerText = `${item.name} - ${item.price}`;
-        cartItems.appendChild(listItem);
-    });
+//complaintForm cancel
+document.getElementById('cancelBtn').addEventListener('click', function() {
+    const complaintForm = document.getElementById('complaintForm');
+    complaintForm.style.display = 'none';
 
-    // عرض عدد العناصر في السلة
-    if (cart.length > 0) {
-        document.getElementById('checkout').style.display = 'block';
-    } else {
-        document.getElementById('checkout').style.display = 'none';
-    }
-}
+    const Thankesbtn = document.getElementById('Thankesbtn');
+    Thankesbtn.style.display = '';
+
+    const showComplaintFormBtn = document.getElementById('showComplaintFormBtn');
+    showComplaintFormBtn.style.display = '';
+
+    const SugFormBtn = document.getElementById('SugFormBtn');
+    SugFormBtn.style.display = '';
+
+    const linkFormBtn = document.getElementById('linkFormBtn');
+    linkFormBtn.style.display = '';
+});
+
+//Thankesbtn
+document.getElementById('Thankesbtn').addEventListener('click', function() {
+    const Thankesform = document.getElementById('Thankesform');
+    Thankesform.style.display = 'block'; 
+
+    const Thankesbtn = document.getElementById('Thankesbtn');
+    Thankesbtn.style.display = 'none';
+
+    const showComplaintFormBtn = document.getElementById('showComplaintFormBtn');
+    showComplaintFormBtn.style.display = 'none';
+
+    const SugFormBtn = document.getElementById('SugFormBtn');
+    SugFormBtn.style.display = 'none';
+
+    const linkFormBtn = document.getElementById('linkFormBtn');
+    linkFormBtn.style.display = 'none';
+});
+
+//suggestionsForm
+document.getElementById('SugFormBtn').addEventListener('click', function() {
+    const suggestionsForm = document.getElementById('suggestionsForm');
+    suggestionsForm.style.display = 'block'; 
+
+    const Thankesbtn = document.getElementById('Thankesbtn');
+    Thankesbtn.style.display = 'none';
+
+    const showComplaintFormBtn = document.getElementById('showComplaintFormBtn');
+    showComplaintFormBtn.style.display = 'none';
+
+    const SugFormBtn = document.getElementById('SugFormBtn');
+    SugFormBtn.style.display = 'none';
+
+    const linkFormBtn = document.getElementById('linkFormBtn');
+    linkFormBtn.style.display = 'none';
+});
+
+//suggestionsForm cancel
+document.getElementById('scancelBtn').addEventListener('click', function() {
+    const suggestionsForm = document.getElementById('suggestionsForm');
+    suggestionsForm.style.display = 'none';
+
+    const Thankesbtn = document.getElementById('Thankesbtn');
+    Thankesbtn.style.display = '';
+
+    const showComplaintFormBtn = document.getElementById('showComplaintFormBtn');
+    showComplaintFormBtn.style.display = '';
+
+    const SugFormBtn = document.getElementById('SugFormBtn');
+    SugFormBtn.style.display = '';
+
+    const linkFormBtn = document.getElementById('linkFormBtn');
+    linkFormBtn.style.display = '';
+});
